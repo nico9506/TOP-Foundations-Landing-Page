@@ -22,12 +22,13 @@
     --info-header-font-size: 36px;
     --info-header-font-weight: 900;
     --info-header-color: #1f2937;
+    --info-p-color: #2c343e;
 
     /*Quote section*/
     --quote-bg-color: #e5e7eb;
-    --quote-font-size: 36px;
+    --quote-font-size: 42px;
     --quote-font-style: italic;
-    --quote-font-weight: 300;
+    --quote-font-weight: 100;
     --quote-font-color: #1f2937;
 }
 
@@ -35,6 +36,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -115,9 +117,14 @@ nav {
     left: 0;
 }
 
-nav h1 {
+nav h1 a {
     color: var(--hero-main-color);
     font-size: var(--hero-logo-font-size);
+    text-decoration: none;
+}
+
+nav h1 a:hover {
+    text-shadow: 0 0 2px var(--call-to-action-bg-color);
 }
 
 nav ul {
@@ -134,6 +141,11 @@ nav ul li a {
     color: var(--hero-secondary-font-color);
     font-size: var(--hero-secondary-font-size);
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--hero-main-color);
+    text-shadow: 0 0 1px var(--hero-main-color);
 }
 /*----------------------------------------------*/
 
@@ -165,10 +177,126 @@ nav ul li a {
     width: 9rem;
 }
 
+.sign-up-button:hover {
+    box-shadow: 0 0 5px var(--hero-main-color);
+    cursor: pointer;
+}
+
 #main-section-img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+/*----------------------------------------------*/
+
+
+/*---------------Info Section------------------*/
+.second-section h2 {
+    color: var(--info-header-color);
+    font-weight: var(--info-header-font-weight);
+    font-size: var(--info-header-font-size);
+    text-align: center;
+    align-self: center;
+}
+
+.second-section .random-info-container {
+    align-self: flex-start;
+}
+
+.second-section p {
+    font-size: var(--hero-secondary-font-size);
+    color: var(--info-p-color);
+    text-align: center;
+}
+
+.second-section .img-secondary {
+    width: 100%;
+    border: 2px solid var(--call-to-action-bg-color);
+    border-radius: 10px;
+}
+/*----------------------------------------------*/
+
+
+/*---------------Quote Section------------------*/
+.quote-section {
+    color: var(--quote-font-color);
+    background-color: var(--quote-bg-color);
+    font-size: var(--quote-font-size);
+    font-style: var(--quote-font-style);
+    font-weight: var(--quote-font-weight);
+    gap: 2rem;
+    height: 25rem;
+}
+
+.quote-section .quote {
+    text-align: center;
+    align-self: flex-end;
+}
+
+.quote-section .quote-author {
+    text-align: right;
+    align-self: flex-start;
+    color: var(--quote-font-color);
+    font-size: var(--hero-logo-font-size);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-style: normal;
+}
+/*----------------------------------------------*/
+
+
+/*---------------Sign up Section------------------*/
+.sign-up-section {
+    height: 20rem;
+}
+
+.blue-container {
+    background-color: var(--call-to-action-bg-color);
+    height: 10rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.blue-container h3 {
+    color: var(--hero-main-color);
+    font-size: var(--hero-logo-font-size);
+}
+
+.blue-container p {
+    color: var(--hero-secondary-font-color);
+    font-size: var(--hero-secondary-font-size);
+}
+
+#sign-up-button-f {
+    border: 1px solid var(--hero-main-color);
+}
+
+/*----------------------------------------------*/
+
+
+/*---------------Footer Section------------------*/
+footer {
+    height: 6rem;
+    position: absolute;
+    bottom: 100;
+    background-color: var(--dark-bg-color);
+    color: var(--hero-main-color);
+    font-size: var(--hero-secondary-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer a {
+    color: var(--call-to-action-bg-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 1px var(--hero-main-color);
 }
 
 /*----------------------------------------------*/

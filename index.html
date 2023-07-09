@@ -9,7 +9,7 @@
 <body>
     <!-- NAVBAR SECTION -->
     <nav>
-        <h1 class="header-logo">Header Logo</h1>
+        <h1 class="header-logo"><a href="#hero-section">Header Logo</a></h1>
 
         <ul>
             <li><a href="#info-section">Random info Section</a></li>
@@ -36,46 +36,56 @@
 
         <!-- SECONDARY INFORMATION -->
         <section id="info-section" class="second-section">
-            <h2>Some random information</h2>
+            <h2 class="col-12">Some random information</h2>
 
-            <div class="random-info-container">
-                <img class="img-secondary" alt="first image placeholder - second section">
+            <div class="col-2"></div>
+            <div class="random-info-container col-2">
+                <img class="img-secondary" src="images/hair-6073_256.gif" alt="first image placeholder - second section">
                 <p>This is some subtext under an illustration image</p>
             </div>
-            <div class="random-info-container">
-                <img class="img-secondary" alt="second image placeholder - second section">
+            <div class="random-info-container col-2">
+                <img class="img-secondary" src="images/hair-6073_256.gif" alt="second image placeholder - second section">
                 <p>This is some subtext under an illustration image</p>
             </div>
-            <div class="random-info-container">
-                <img class="img-secondary" alt="third image placeholder - second section">
+            <div class="random-info-container col-2">
+                <img class="img-secondary" src="images/hair-6073_256.gif" alt="third image placeholder - second section">
                 <p>This is some subtext under an illustration image</p>
             </div>
-            <div class="random-info-container">
-                <img class="img-secondary" alt="fourth image placeholder - second section">
+            <div class="random-info-container col-2">
+                <img class="img-secondary" src="images/hair-6073_256.gif" alt="fourth image placeholder - second section">
                 <p>This is some subtext under an illustration image</p>
             </div>
+            <div class="col-2"></div>
         </section>
 
         <!-- EXTRA INFORMATION - A RANDOM QUOTE -->
+        <div class="col-3"></div>
         <section id="quote-section" class="quote-section">
-            <p class="quote">in a gentle way, you can shake the world.</p>
-            <p class="quote-author">mahatma gandhi</p>
+            <p class="quote col-12">In a gentle way, you can shake the world.</p>
+            <p class="quote-author col-6">mahatma gandhi</p>
         </section>
+        <div class="col-3"></div>
 
         <!-- SIGN UP LINK AND CONTACT INFORMATION -->
         <section id="final-section" class="sign-up-section">
-            <div class="-blue-container">
-                <h3>Call to action! It's time!</h3>
-                <p>Sign up for our product by clicking that button right over there!</p>
-                <button id="sign-up-button-f" class="sign-up-button">Sign up</button>
+            <div class="blue-container col-8">
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <h3>Call to action! It's time!</h3>
+                    <p>Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <div class="col-2">
+                    <button id="sign-up-button-f" class="sign-up-button">Sign up</button>
+                </div>
+                <div class="col-1"></div>
             </div>
         </section>
     </main>
 
     <!-- FOOTER SECTION - CONTACT DETAILS AND COPYRIGHT -->
-    <footer>
-        <p class="copyright-note">Copyright © Nicolas Lopez</p>
-        <p class="github-note">github.com/nico9506</p>
+    <footer class="col-12">
+        <p>Copyright © Nicolas Lopez</p>
+        <p><a href="https://github.com/nico9506">github.com/nico9506</a></p>
     </footer>
 </body>
 </html>
