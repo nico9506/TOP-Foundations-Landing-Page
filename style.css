@@ -1,0 +1,174 @@
+/* GLOBAL settings, COLORS AND FONTSTYLE */
+:root {
+    /*Hero and Footer*/
+    --dark-bg-color: #1f2937;
+
+    /*Hero Main text*/
+    --hero-main-font-size: 48px;
+    --hero-main-font-weight: 900;
+    --hero-main-color: #f9faf8;
+
+    /*Hero secondary text, header link text*/
+    --hero-secondary-font-size: 18px;
+    --hero-secondary-font-color: #e5e7eb;
+
+    /*Header logo text*/
+    --hero-logo-font-size: 24px;
+
+    /*Button color, call to action background-color*/
+    --call-to-action-bg-color: #3882f6;
+
+    /*Secondary section variables*/
+    --info-header-font-size: 36px;
+    --info-header-font-weight: 900;
+    --info-header-color: #1f2937;
+
+    /*Quote section*/
+    --quote-bg-color: #e5e7eb;
+    --quote-font-size: 36px;
+    --quote-font-style: italic;
+    --quote-font-weight: 300;
+    --quote-font-color: #1f2937;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 30rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 0 1rem;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/*----------------Navbar style------------------*/
+nav {
+    background-color: var(--dark-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav h1 {
+    color: var(--hero-main-color);
+    font-size: var(--hero-logo-font-size);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    color: var(--hero-secondary-font-color);
+    font-size: var(--hero-secondary-font-size);
+    text-decoration: none;
+}
+/*----------------------------------------------*/
+
+/*----------------Hero Section------------------*/
+.first-section {
+    background-color: var(--dark-bg-color);
+    color: var(--hero-main-color);
+}
+
+.first-section h1 {
+    font-weight: var(--hero-main-font-weight);
+    font-size: var(--hero-main-font-size);
+}
+
+.first-section p {
+    color: var(--hero-secondary-font-color);
+    font-size: var(--hero-secondary-font-size);
+    margin-bottom: 2rem;
+}
+
+.sign-up-button {
+    background-color: var(--call-to-action-bg-color);
+    color: var(--hero-main-color);
+    font-weight: var(--hero-main-font-weight);
+    font-size: var(--hero-secondary-font-size);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--call-to-action-bg-color);
+    width: 9rem;
+}
+
+#main-section-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/*----------------------------------------------*/
